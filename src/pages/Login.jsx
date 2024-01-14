@@ -43,7 +43,7 @@ function Login({setUser}) {
                         </Button>
                         </Form>
                         <div style={{marginTop:25, display:'flex',justifyContent:'center', cursor:'pointer'}}>
-                          New Here? Please<Card.Link style={{marginLeft:5}} href='/signUp'>Sign up</Card.Link>
+                          New Here? Please<Card.Link style={{marginLeft:5}} onClick={()=>navigate('/signup')} >Sign up</Card.Link>
                         </div>
                     </Card.Body>
                 </Card>
