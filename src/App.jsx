@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div>
-       {/* <Navbar bg='light' variant='light'>
+       <Navbar bg='light' variant='light'>
         <Container>
           <Navbar.Brand style={{fontWeight:"bold"}} href="/">
             <img
@@ -49,6 +49,7 @@ function App() {
           {user && <Button className='logout-btn' onClick={()=> {handleLogout()}}> Logout </Button>}
         </Container>
       </Navbar>
+      {/* <RouterProvider router={router}/> */}
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/movie/:id" element={<Movie/>}/>
@@ -56,7 +57,7 @@ function App() {
         <Route path="/success" element={<Success/>}/>
         <Route path="/login" element={<Login setUser={setUser}/>}/>
         <Route path="/signup" element={<SignUp setUser={setUser}/>}/>
-      </Routes> */} hello
+      </Routes>
       </div>
   )
 }
